@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Dumb Voice Assistant</title>
+{% endblock %}
+
+{% block content %}
+<form action="http://localhost:5000/profile" method="post">
+    <input type="text" name="text" id="text" />
+    <button type="submit">
+        Say it!
+    </button>
+</form>
+{% endblock %}
